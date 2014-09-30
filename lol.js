@@ -1,3 +1,11 @@
+Router.configure({
+  layoutTemplate: 'layout'
+});
+
+Router.map(function () {
+  this.route('hello', {path: '/'});
+});
+
 if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault("counter", 0);
